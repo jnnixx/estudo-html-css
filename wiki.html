@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header> <!-- Cabeçalho = introduzir algo -->
+        <h1> Estudo do HTML</h1>
+        <h3>Conceitos introdutórios da linguagem</h3>
+        <nav> <!-- agrupa links de navegação-->
+            <ol>
+                <li><a href="#intro">Introdução</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal da página-->
+        <section> <!--Separa topicos/conteudos-->
+            <h3>Uso de Tags</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quisquam modi eaque! Nulla magnam mollitia aut accusamus ducimus dolore quidem, et, error sed quisquam nesciunt quos eius earum, assumenda pariatur!</p>
+        </section>
+        <section>
+            <h3>Uso de tabelas</h3>
+            <table border="1" cellpadding="3" style="border-collapse:collapse;"> <!--tabela-->
+                <thead> <!--Cabeçalho da tabela-->
+                    <tr>
+                        <th colspan="4">Usúarios</th>
+                    </tr>
+                    <tr> <!--Table row-->
+                        <th>Tipo</th>
+                        <th>Nome</th>   <!--table header -->
+                        <th>CPF</th>    
+                        <th>Data Nasc.</th>
+                    </tr>
+                </thead>
+                <tbody> <!--faz as linhas-->
+                    <tr><!--Faz  a separação -->
+                        <td rowspan="2">Funcionários</td> <!--expande somente na vertical linhas necessarias -->
+                        <td>Jenni</td> <!--Table data-->
+                        <td>000.000.000-00</td>
+                        <td>30/09/2001</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Aparecida</td> <!--Table data-->
+                        <td>000.000.000-00</td>
+                        <td>27/01/1978</td>
+                    </tr>
+                    <tr>
+                        <td>Cliente</td>
+                        <td>Carlos José</td> <!--Table data-->
+                        <td>000.000.000-00</td>
+                        <td>01/01/1993</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr/>
+            <table border="1" cellpadding="4" style="border-collapse: collapse;">
+                <tr>
+                    <td colspan="2">Celula1-1</td>
+                    <td>Celula 1-3</td>
+                </tr>
+                <tr>
+                    <td>Celula 2-1</td>
+                    <td>Celula 2-2</td>
+                    <td>Celula 2-3</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <hr/> <!-- Gera linha de divisão = horizontal rule-->
+    <footer> <!--Da informações de autoria/encerra o conteudo apresentado-->
+        © 
+        <script>
+            //serve para atualizar de forma automatica o ano
+            document.write(new Date().getFullYear())  
+        </script>
+        Soulcode Academy
+    </footer>
+</body>
+</html>
