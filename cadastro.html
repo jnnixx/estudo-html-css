@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> <!--Container de inputs-->
+        <div>
+            <!--Rotulo do campo (da um nome) -->
+            <label for="campoNome">Nome completo</label><br/>
+            <!--campo de entrada de dados -->
+            <!--placeholder = dica p/ usuario-->
+            <!-- required = obrigatorio-->
+            <input id="campoNome" name="campoNome" type="text" placeholder="seu nome" required />
+        </div>
+        <div>
+            <label for="campoEmail">E-mail</label> <br/>
+            <input id="campoEmail" name="campoEmail" type="email" placeholder="@gmail.com" required>
+        </div>
+        <div>
+            <label for="campoSenha">Senha</label> <br/>
+            <input id="campoSenha" name="campoSenha" type="password" placeholder="senha" minlength="8" required>
+            <div>
+                <!--caixa de seleção c/opções-->
+                <label for="campoProfissao">Profissão</label><br/>
+                <select id="campoProfissao" name="campoProfissao" required> <!--required = selecionar um valor valido-->
+                    <option selected disabled value="">Selecione uma opção</option>
+                    <option value="professor">Professor</option>
+                    <option value="técnico">Técnico</option>
+                    <option value="especialista">Especialista</option>
+                    <option value="veterinario">Veterinário</option>
+                </select>
+            </div>
+            <div>
+                <label>Idioma nativo</label> <br/>
+
+                <input id="checkIngles" name="campoIdioma" type="radio" value="Ingles" required/>
+                <Label For="checkIngles">Inglês</Label>
+
+                <input id="checkEspanhol" name="campoIdioma" type="radio" value="Espanhol" required/>
+                <Label For="checkEspanhol">Espanhol</Label>
+
+                <input id="checkPortugues" name="campoIdioma" type="radio" value="Portugues" required />
+                <Label For="checkPortugues">Portugues</Label>
+            </div>  
+            <div>
+                <label for="campoResumo">Fale sobre você</label> <br/>
+                <textarea id="campoResumo" name="campoResumo" minlength="30" maxlength="128" placeholder="Descreva sobre você" required></textarea>
+            </div>
+            <div>
+                <input id="checkTermos" type="checkbox" name="concordaTermos" required/>
+                <label for="checkTermos">Concordo com os Termos de serviços</label>
+            </div>
+            <hr/>
+            <button type="submit">Enviar</button> <!--Submeter/submit-->
+            <button type="reset">Limpar</button>
+            <button type="button" onclick="alert('Oie')" >outra ação</button>
+            <!--onclick = apóis o clique do usuario no botão, fazer uma ação-->
+    </form>
+</body>
+</html>
