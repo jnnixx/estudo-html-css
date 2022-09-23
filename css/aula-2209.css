@@ -1,0 +1,48 @@
+h3{
+    background-color: red;
+}
+
+.box1{
+    background-color: coral;
+    /* padding é o espaçamento interno//empurra o conteudo*/
+    padding: 16px;
+    /*marginé o espacamento externo*/ 
+    margin: 8px;
+}
+.box2{
+    background-color: green;
+    /*T R B L = sentido horario para escolher o tamanho*/
+    padding: 8px 20px 4px 10px;
+    margin: 8px 10px 20px 40px;
+}
+.box3{
+    background-color: brown;
+    /*espressuram - estilo e cor é a ordem para a bordar*/
+    /* costum das  dashed, dotted, solid*/
+    border: 2px solid yellow; 
+    border-radius: 8px; /*arredonda a borda*/
+    padding: 8px;
+}
+.box4{
+    background-color: violet;
+    width: 400px;
+    padding: 20px;
+    border: 5px solid red;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background:url("https://soulcodeacademy.org/assets/images/logo/light-logo.png") right bottom no-repeat fixed;
+    /*background-repeat:no-repeat; /* y = vartical e x = horizontal*/
+    /*background-size: contain; /* cover seria como um zoom e contein = estica a imagem*/
+    /*background-position: center;*/
+    /*background-position: right bottom;
+    /*height: 100vh; /delimita ofinal do body vh = viewport*/
+    /*background-attachment: fixed;*/
+    
+}
